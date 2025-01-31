@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Poppins,'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    border: none;
+    margin-top: -5em;
+    border-radius: 1em;
+    box-shadow: 0px 0px 30px rgb(255, 183, 0);;
+    width: 60%;
+    height: 56vh;
+}
+
+h1 {
+    /* border: 2px solid black; */
+    font-size: 3em;
+    padding-top: 0.3em;
+}
+
+h1:hover {
+    color: rgb(255, 183, 0);
+    cursor: pointer;
+}
+
+#date {
+    margin-top: 0.8em;
+    /* font-size: 1em; */
+    /* color: #0b0b0b; */
+}
+
+#date:hover {
+    color: rgb(255, 183, 0);
+    cursor: pointer;
+}
+.container {
+    /* border: 2px solid black; */
+    margin-top: 1em;
+}
+
+#display {
+    font-size: 6em;
+    font-family: monospace;
+    margin-bottom: 0.7em;
+}
+
+#display:hover {
+    color: rgb(255, 183, 0);
+    cursor: pointer;
+}
+
+.controls {
+    /* background: red; */
+    /* border: 2px solid black; */
+    /* min-width: 120%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8em;
+    
+} 
+
+button {
+    width: 30%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btns {
+    position: relative;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    /* background: none; */
+    border: none;
+    /* border: 2px solid #646cff; */
+    /* border: 2px solid #4efe0e 0 0; */
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #222;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.liquid {
+    background: linear-gradient(#4efe0e 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0.2em);
+    transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.liquids {
+    background: linear-gradient(#0447ff 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0.2em);
+    transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.liquid:hover {
+    --p: 100%;
+    --t: 0.3s;
+    color: #fff;
+}
+
+.liquids:hover {
+    --p: 100%;
+    --t: 0.3s;
+    color: #fff;
+}
+
+.btn {
+    position: relative;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    /* border: 2px solid red; */
+    /* border: 2px solid #222; */
+    border: none;
+    background: none;
+    box-shadow: 0px 0px 20px #222;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.glitch {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+}
+
+.glitch:hover {
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    background: linear-gradient(#fe0e1a 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
+}
+  
+@keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-4px, 4px);
+    }
+    40% {
+      transform: translate(-4px, -4px);
+    }
+    60% {
+      transform: translate(4px, 4px);
+    }
+    80% {
+      transform: translate(4px, -4px);
+    }
+    100% {
+      transform: translate(0);
+    }
+}
+
+ /* Reset */
+
